@@ -1,20 +1,23 @@
 <h1>TripMapper</h1>
 <h3>Login</h3>
+
+<!-- posts to sessions#create to validate login info -->
 <%= form_tag '/sessions' do |f| %>
-	<%= text_field_tag :user_email, nil, placeholder: "ENTER EMAIL"%>
+	<%= text_field_tag :user_email, nil, placeholder: "Enter Email"%>
 	<br>
-	<%= password_field_tag :password, nil, placeholder: "ENTER PASSWORD"%>
+	<%= password_field_tag :password, nil, placeholder: "Enter Password"%>
+	<%= flash[:notice] %>
 	<br>
 	<%= submit_tag "Login", :class => 'submit' %>
 <% end %>
 
 <h3>Create Account</h3>
 <%= form_for User.new do |f| %>
-	<%= f.email_field :email, placeholder: "ENTER EMAIL" %>
+	<%= f.email_field :email, placeholder: "Enter Email" %>
 	<br>
-	<%= f.password_field :password, placeholder: "ENTER PASSWORD" %>
+	<%= f.password_field :password, placeholder: "Enter Password" %>
 	<br>
-	<%= f.password_field :password_confirmation , placeholder: "CONFIRM PASSWORD"%>
+	<%= f.password_field :password_confirmation , placeholder: "Confirm Password"%>
 	<br>
 	<%= f.submit "Create Account", :class => 'submit'%>
 <% end %>

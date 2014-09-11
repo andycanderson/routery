@@ -1,0 +1,62 @@
+<h1>show trips</h1>
+
+<%= form_for Trip.new do |f| %>
+	<%= f.text_field :trip_name, placeholder: "Enter New Trip" %>
+	<%= f.submit "New Trip", :class => 'submit' %>
+<% end %>
+
+<%@trips.each do |trip|%>
+	<p>trip name: <%=trip.trip_name%></p>
+	<%=link_to "go to trip", trip_path(trip)%>
+	<%= link_to 'delete', trip, :method => :delete %>
+<%end%>
+
+
+<div id="map_canvas"></div>
+
+
+
+<script>
+
+$(document).ready(function () {
+    var map;
+    var elevator;
+    var myOptions = {
+        zoom: 1,
+        center: new google.maps.LatLng(0, 0),
+        // this makes terrain show
+        // mapTypeId: 'terrain',
+        styles: mapStyle
+
+    };
+    map = new google.maps.Map($('#map_canvas')[0], myOptions);
+
+    // var addresses = ['England', 'France', 'Germany','Italy','Greece','Disneyland'];
+
+
+    // input addresses here
+    var addresses = [
+    // only run loop if there are @locations present
+    <%if @locations%>
+    <% @locations.each do |place| %>
+  "<%="#{place.coordinates[1]}, #{place.coordinates[0]}"%>",<%end%>
+  	<%end%>
+  ];
+  
+
+    for (var x = 0; x < addresses.length; x++) 
+    {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+            var p = data.results[0].geometry.location;
+            
+            var latlng = new google.maps.LatLng(p.lat, p.lng);
+            new google.maps.Marker({
+                position: latlng,
+                map: map
+            });
+
+        });
+    }
+
+});
+</script>

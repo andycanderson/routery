@@ -15,3 +15,5 @@
 //= require turbolinks
 //= require_tree .
 
+var mapStyle = [{"featureType":"water","elementType":"all","stylers":[{"hue":"#bbbbbb"},{"saturation":-100},{"lightness":-4},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#999999"},{"saturation":-100},{"lightness":-33},{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"hue":"#999999"},{"saturation":-100},{"lightness":-6},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#aaaaaa"},{"saturation":-100},{"lightness":-15},{"visibility":"on"}]}];
+
