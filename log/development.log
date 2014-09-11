@@ -54339,3 +54339,2378 @@ Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 12:21:22 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 12:21:22 -0700
+
+
+Started GET "/locations/5411c6844d61632d99180000" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5411c6844d61632d99180000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4690ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4070ms
+  Rendered locations/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 7.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 12:23:32 -0700
+
+
+Started GET "/locations/5411c6844d61632d99180000" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5411c6844d61632d99180000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2910ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3320ms
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 35.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 12:25:43 -0700
+
+
+Started GET "/locations/5411c6844d61632d99180000" for 127.0.0.1 at 2014-09-11 13:48:50 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5411c6844d61632d99180000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4670ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4220ms
+  Rendered locations/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 46.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 13:48:51 -0700
+
+
+Started GET "/locations/5411c6844d61632d99180000" for 127.0.0.1 at 2014-09-11 14:14:40 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5411c6844d61632d99180000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 106.7110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 50.4600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 52.4240ms
+  Rendered locations/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 411ms (Views: 100.8ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:14:41 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:15:56 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 17.8710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 88.5880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7560ms
+  Rendered trips/show.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 238ms (Views: 186.2ms)
+
+
+Started GET "/mylocations" for 127.0.0.1 at 2014-09-11 14:16:09 -0700
+Processing by UsersController#show as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"user_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 29.6600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"user_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9950ms
+  Rendered users/show.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 159ms (Views: 154.4ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:16:31 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4020ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4060ms
+  Rendered trips/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 8.7ms)
+
+
+Started POST "/locations/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:16:42 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "location"=>{"address"=>"australia"}, "commit"=>"Go!", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5710ms
+  MOPED: 127.0.0.1:27017 INSERT       database=infoapp_development collection=locations documents=[{"_id"=>BSON::ObjectId('5412113a4d616331f9000000'), "address"=>"australia", "user_id"=>BSON::ObjectId('540a69cc4d6163a919000000'), "trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "coordinates"=>[133.775136, -25.274398]}] flags=[]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 150.2110ms
+Redirected to http://localhost:3000/locations/5412113a4d616331f9000000
+Completed 302 Found in 402ms
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:16:42 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3850ms
+  Rendered locations/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:16:43 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5400ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4360ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4390ms
+  Rendered locations/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:20:51 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4570ms
+  Rendered locations/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 13ms (Views: 8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:21:12 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:22:23 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5260ms
+  Rendered locations/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 153ms (Views: 145.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:22:24 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:22:25 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:23:32 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 127.6560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 22.1560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 8.3190ms
+  Rendered locations/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 311ms (Views: 122.7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:33 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3360ms
+  Rendered locations/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:23:54 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4840ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3790ms
+  Rendered locations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 12ms (Views: 7.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:05 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.5370ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7250ms
+  Rendered locations/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 10.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:46 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5410ms
+  Rendered locations/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 9.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:24:56 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5450ms
+  Rendered locations/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 10.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:07 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3420ms
+  Rendered locations/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 7.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:37 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:25:38 -0700
+
+
+Started GET "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4450ms
+  Rendered locations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:28:21 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:30:56 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7700ms
+  Rendered trips/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 83ms (Views: 78.8ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6500ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6250ms
+Creating scope :near. Overwriting existing method Location.near.
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6730ms
+  Rendered trips/show.html.erb within layouts/application (257.3ms)
+Completed 200 OK in 338ms (Views: 265.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:35:24 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4860ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1910ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6650ms
+  Rendered trips/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 17ms (Views: 12.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:34 -0700
+
+
+Started POST "/locations/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:36:44 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "location"=>{"address"=>"greenland", "description"=>"icy cold\r\n"}, "commit"=>"Go!", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5180ms
+Unpermitted parameters: description
+  MOPED: 127.0.0.1:27017 INSERT       database=infoapp_development collection=locations documents=[{"_id"=>BSON::ObjectId('541215ec4d616331f9010000'), "address"=>"greenland", "user_id"=>BSON::ObjectId('540a69cc4d6163a919000000'), "trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "coordinates"=>[-42.604303, 71.706936]}] flags=[]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.7790ms
+Redirected to http://localhost:3000/locations/541215ec4d616331f9010000
+Completed 302 Found in 198ms
+
+
+Started GET "/locations/541215ec4d616331f9010000" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"541215ec4d616331f9010000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541215ec4d616331f9010000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3460ms
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:36:45 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:36:51 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4020ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4860ms
+  Rendered trips/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 18ms (Views: 13.8ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8170ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5630ms
+Creating scope :near. Overwriting existing method Location.near.
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5120ms
+  Rendered trips/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 39ms (Views: 10.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:37:48 -0700
+
+
+Started DELETE "/locations/541215ec4d616331f9010000" for 127.0.0.1 at 2014-09-11 14:37:52 -0700
+
+SyntaxError (/Users/Andy/Desktop/GA/week4/infoapp/app/controllers/locations_controller.rb:14: syntax error, unexpected keyword_if, expecting ']'
+		if location.save
+		  ^):
+  activesupport (4.0.4) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__793887854307619554__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/Andy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.0ms)
+
+
+Started DELETE "/locations/541215ec4d616331f9010000" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "id"=>"541215ec4d616331f9010000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3740ms
+Creating scope :near. Overwriting existing method Location.near.
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541215ec4d616331f9010000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541215ec4d616331f9010000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6550ms
+  MOPED: 127.0.0.1:27017 DELETE       database=infoapp_development collection=locations selector={"_id"=>BSON::ObjectId('541215ec4d616331f9010000')} flags=[:remove_first]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 58.4230ms
+Redirected to http://localhost:3000/trips/5410729b4d6163253d000000
+Completed 302 Found in 83ms
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4340ms
+  Rendered trips/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 20ms (Views: 9.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:17 -0700
+
+
+Started DELETE "/locations/5412113a4d616331f9000000" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "id"=>"5412113a4d616331f9000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412113a4d616331f9000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4480ms
+  MOPED: 127.0.0.1:27017 DELETE       database=infoapp_development collection=locations selector={"_id"=>BSON::ObjectId('5412113a4d616331f9000000')} flags=[:remove_first]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.4260ms
+Redirected to http://localhost:3000/trips/5410729b4d6163253d000000
+Completed 302 Found in 6ms
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5020ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3610ms
+  Rendered trips/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:19 -0700
+
+
+Started DELETE "/locations/5411c6844d61632d99180000" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "id"=>"5411c6844d61632d99180000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c6844d61632d99180000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4440ms
+  MOPED: 127.0.0.1:27017 DELETE       database=infoapp_development collection=locations selector={"_id"=>BSON::ObjectId('5411c6844d61632d99180000')} flags=[:remove_first]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.4640ms
+Redirected to http://localhost:3000/trips/5410729b4d6163253d000000
+Completed 302 Found in 7ms
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3920ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5130ms
+  Rendered trips/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 14ms (Views: 10.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:20 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:21 -0700
+
+
+Started POST "/locations/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "location"=>{"address"=>"costa rica", "description"=>"arenal volcano\r\n"}, "commit"=>"Go!", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8560ms
+Unpermitted parameters: description
+  MOPED: 127.0.0.1:27017 INSERT       database=infoapp_development collection=locations documents=[{"_id"=>BSON::ObjectId('541216614d616331f9020000'), "address"=>"costa rica", "user_id"=>BSON::ObjectId('540a69cc4d6163a919000000'), "trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "description"=>"arenal volcano\r\n", "coordinates"=>[-83.753428, 9.748916999999999]}] flags=[]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 1.0500ms
+Redirected to http://localhost:3000/locations/541216614d616331f9020000
+Completed 302 Found in 512ms
+
+
+Started GET "/locations/541216614d616331f9020000" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"541216614d616331f9020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541216614d616331f9020000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4950ms
+  Rendered locations/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:41 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:45 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4220ms
+  Rendered trips/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 15ms (Views: 9.6ms)
+
+
+Started DELETE "/locations/5411c47b4d61632d99170000" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "id"=>"5411c47b4d61632d99170000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c47b4d61632d99170000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5411c47b4d61632d99170000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5430ms
+  MOPED: 127.0.0.1:27017 DELETE       database=infoapp_development collection=locations selector={"_id"=>BSON::ObjectId('5411c47b4d61632d99170000')} flags=[:remove_first]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.7640ms
+Redirected to http://localhost:3000/trips/5410729b4d6163253d000000
+Completed 302 Found in 6ms
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4240ms
+  Rendered trips/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 8.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:50 -0700
+
+
+Started DELETE "/locations/541110104d61632d99110000" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "id"=>"541110104d61632d99110000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541110104d61632d99110000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('541110104d61632d99110000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4480ms
+  MOPED: 127.0.0.1:27017 DELETE       database=infoapp_development collection=locations selector={"_id"=>BSON::ObjectId('541110104d61632d99110000')} flags=[:remove_first]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.4370ms
+Redirected to http://localhost:3000/trips/5410729b4d6163253d000000
+Completed 302 Found in 8ms
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4060ms
+  Rendered trips/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 8.6ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:38:52 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4220ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3310ms
+  Rendered trips/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 15ms (Views: 8.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:40:50 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:44:00 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5300ms
+Creating scope :near. Overwriting existing method Location.near.
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4920ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4580ms
+  Rendered trips/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 35ms (Views: 10.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:44:01 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4210ms
+  Rendered trips/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 15ms (Views: 9.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:13 -0700
+
+
+Started POST "/locations/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "location"=>{"address"=>"south africa", "description"=>"safari"}, "commit"=>"Go!", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6420ms
+  MOPED: 127.0.0.1:27017 INSERT       database=infoapp_development collection=locations documents=[{"_id"=>BSON::ObjectId('5412186c4d616331f9030000'), "address"=>"south africa", "description"=>"safari", "user_id"=>BSON::ObjectId('540a69cc4d6163a919000000'), "trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "coordinates"=>[22.937506, -30.559482]}] flags=[]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.7080ms
+Redirected to http://localhost:3000/locations/5412186c4d616331f9030000
+Completed 302 Found in 105ms
+
+
+Started GET "/locations/5412186c4d616331f9030000" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5412186c4d616331f9030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('5412186c4d616331f9030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4020ms
+  Rendered locations/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 14:47:24 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 14:47:33 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4290ms
+  Rendered trips/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 14ms (Views: 9.9ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:08:38 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4750ms
+Creating scope :near. Overwriting existing method Location.near.
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4010ms
+  Rendered trips/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 104ms (Views: 28.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:38 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:39 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4240ms
+  Rendered trips/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:41 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4890ms
+  Rendered trips/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 16ms (Views: 10.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:08:54 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4270ms
+  Rendered trips/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 15ms (Views: 9.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:08:55 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4470ms
+  Rendered trips/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 11.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:01 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000?filter=costa+rica" for 127.0.0.1 at 2014-09-11 15:09:05 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"filter"=>"costa rica", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4020ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 58.1770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7800ms
+  Rendered trips/show.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 75ms (Views: 71.4ms)
+
+
+Started POST "/locations/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdM7iZ8ZPhvgLVDr6O45Iz5Tw/rMatGip/rLeNcJlI0=", "location"=>{"address"=>"costa rica", "description"=>"that other place"}, "commit"=>"Go!", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5020ms
+  MOPED: 127.0.0.1:27017 INSERT       database=infoapp_development collection=locations documents=[{"_id"=>BSON::ObjectId('54121d914d616331f9040000'), "address"=>"costa rica", "description"=>"that other place", "user_id"=>BSON::ObjectId('540a69cc4d6163a919000000'), "trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "coordinates"=>[-83.753428, 9.748916999999999]}] flags=[]
+                         COMMAND      database=infoapp_development command={:getlasterror=>1, :w=>1} runtime: 0.9680ms
+Redirected to http://localhost:3000/locations/54121d914d616331f9040000
+Completed 302 Found in 529ms
+
+
+Started GET "/locations/54121d914d616331f9040000" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"54121d914d616331f9040000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"$query"=>{"_id"=>BSON::ObjectId('54121d914d616331f9040000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4100ms
+  Rendered locations/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 83ms (Views: 79.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:09:21 -0700
+
+
+Started GET "/trips/5410729b4d6163253d000000" for 127.0.0.1 at 2014-09-11 15:09:23 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4590ms
+  Rendered trips/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 9.8ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000?filter=costa+rica" for 127.0.0.1 at 2014-09-11 15:09:26 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"filter"=>"costa rica", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4110ms
+  Rendered trips/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 14ms (Views: 9.7ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000?filter=costa+rica" for 127.0.0.1 at 2014-09-11 15:10:42 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"filter"=>"costa rica", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5630ms
+  Rendered trips/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 17ms (Views: 10.8ms)
+
+
+Started GET "/trips/5410729b4d6163253d000000?filter=costa+rica" for 127.0.0.1 at 2014-09-11 15:13:27 -0700
+Processing by TripsController#show as HTML
+  Parameters: {"filter"=>"costa rica", "id"=>"5410729b4d6163253d000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=users selector={"_id"=>BSON::ObjectId('540a69cc4d6163a919000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=trips selector={"_id"=>BSON::ObjectId('5410729b4d6163253d000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=infoapp_development collection=locations selector={"trip_id"=>BSON::ObjectId('5410729b4d6163253d000000'), "address"=>"costa rica"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4230ms
+  Rendered trips/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 15ms (Views: 10.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 15:13:28 -0700

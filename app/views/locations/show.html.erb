@@ -3,6 +3,8 @@
 <!-- searching and patching new locations -->
 <%=form_for Location.new, url: "/locations/#{@location.id}", html: {method: "patch"} do |f|%>
 	<%=f.text_field :address, value: @location.address %>
+	<br>
+	<%=f.text_area :description, value: @location.description, :cols => "19", :rows => "10", placeholder: "Enter Description" %>
 	<%=f.submit "Go!", :class => 'submit' %>
 	<%=link_to "Save", trip_path(@location.trip_id)%>
 <%end%>
@@ -27,6 +29,11 @@
 $(document).ready(function () {
     var map;
     var elevator;
+
+    // array added to on click
+    var locationArr = [];
+
+
     var latlng = new google.maps.LatLng(<%=@location.coordinates[1]%><%=", "%><%= @location.coordinates[0]%>);
     
 
@@ -53,6 +60,9 @@ $(document).ready(function () {
 
         });
 
+    
+
+    // add location marker
     google.maps.event.addListener(map, 'click', function(event) {
     addMarker(event.latLng);
   	});
@@ -62,7 +72,8 @@ $(document).ready(function () {
     	position: location,
     	map: map
   	});
-  	
+  	locationArr.push(location.k+ ", " + location.B);
+  	console.log(locationArr);
 }
 
 });

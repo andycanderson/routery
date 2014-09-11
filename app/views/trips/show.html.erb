@@ -1,13 +1,17 @@
 <h1>show trip</h1>
 
+<%=link_to 'only costa rica', trip_path(filter: 'costa rica')%>
 <p>Trip Name: <%=@trip.trip_name%></p>
 <%=form_for Location.new, url: "/locations/#{@trip_id}" do |f|%>
 	<%=f.text_field :address, placeholder: "Search Address" %>
+	<br>
+	<%=f.text_area :description, :cols => "19", :rows => "10", placeholder: "Enter Description" %>
 	<%=f.submit "Go!", :class => 'submit' %>
 <%end%>
 
 <% @locations.each do |location|%>
 	<p>Location: <%=location.address%></p>
+	<p>Description: <%=location.description%></p>
 	<%=link_to "delete", location_delete_path(location.id), :method => :delete%>
 <%end%>
 

@@ -1,10 +1,12 @@
 class Location
   include Mongoid::Document
+ 
   include Geocoder::Model::Mongoid  
 
   belongs_to :trip
   belongs_to :user
 
+  field :description, type: String
   field :address
   field :coordinates, type: Array
   

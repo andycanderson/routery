@@ -2,14 +2,15 @@ class LocationsController < ApplicationController
 	before_filter :no_login
 
 	def index
-		# @locations = Location.where(trip_id: params[:id])
+		
 
 	end
 
 	def create
-		location = Location.new(params.require(:location).permit(:address))
+		location = Location.new(params.require(:location).permit(:address, :description))
 		location.user = @current_user
 		location.trip_id = params[:id]
+		
 		if location.save
 			redirect_to "/locations/#{location.id}"
 		else
@@ -24,6 +25,7 @@ class LocationsController < ApplicationController
 	def update
 		location = Location.find_by(id: params[:id])
 		location.address = params[:location][:address]
+		location.description = params[:location][:description]
 		if location.save
 			redirect_to "/locations/#{location.id}"
 		else

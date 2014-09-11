@@ -5,7 +5,14 @@ class TripsController < ApplicationController
 		@trip_id = params[:id]
     @trip = Trip.find(params[:id])
     # gets all locations for this trip 
-		@locations = Location.where(trip_id: params[:id])
+
+    filter = params[:filter]
+    case filter
+    when 'costa rica'
+      @locations = Location.where(trip_id: params[:id], address: 'costa rica')
+    else
+		  @locations = Location.where(trip_id: params[:id])
+    end
 	end
 
 	def create
