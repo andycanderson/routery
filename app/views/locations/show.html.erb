@@ -9,6 +9,7 @@
 	<%=link_to "Save", trip_path(@location.trip_id)%>
 <%end%>
 
+<div id="save_locations">Save links</div>
 <div id="map_canvas"></div>
 
 <script>
@@ -31,7 +32,7 @@ $(document).ready(function () {
     var elevator;
 
     // array added to on click
-    var locationArr = [];
+    locationArr = [["<%=@location.trip_id%>"]];
 
 
     var latlng = new google.maps.LatLng(<%=@location.coordinates[1]%><%=", "%><%= @location.coordinates[0]%>);
@@ -60,7 +61,14 @@ $(document).ready(function () {
 
         });
 
-    
+    $("#save_locations").click(function(){
+    	$.ajax({
+    	method: "post",
+    	url: "/add_dropped",
+    	data: {locations: locationArr},
+    	dataType: "json"
+    	});
+    });
 
     // add location marker
     google.maps.event.addListener(map, 'click', function(event) {
@@ -72,7 +80,7 @@ $(document).ready(function () {
     	position: location,
     	map: map
   	});
-  	locationArr.push(location.k+ ", " + location.B);
+  	locationArr.push([location.B, location.k]);
   	console.log(locationArr);
 }
 

@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
 		if user && user.authenticate(params[:password])
 			session[:user_id] = user.id.to_s
 			# brings user to their home page
-			redirect_to user_path(user.id)
+
+			redirect_to home_path
 		else
 			# redirect_to root_path for invalid email/pw
 			# also makes a flash notice for user

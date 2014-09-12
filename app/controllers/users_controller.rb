@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	before_filter :no_login
+	before_filter :check_login
 
 	def new
 	end

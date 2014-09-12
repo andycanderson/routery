@@ -1,18 +1,11 @@
 class TripsController < ApplicationController
-	before_filter :no_login
+	before_filter :check_login
 
 	def show
 		@trip_id = params[:id]
     @trip = Trip.find(params[:id])
     # gets all locations for this trip 
-
-    filter = params[:filter]
-    case filter
-    when 'costa rica'
-      @locations = Location.where(trip_id: params[:id], address: 'costa rica')
-    else
-		  @locations = Location.where(trip_id: params[:id])
-    end
+		@locations = Location.where(trip_id: params[:id])
 	end
 
 	def create

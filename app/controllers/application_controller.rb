@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   	end
   end
 
-  def no_login
+  def check_login
   	unless session[:user_id]
   		redirect_to root_path
   	end
