@@ -44,32 +44,37 @@ class LocationsController < ApplicationController
 
 # pins that are dropped
 	def dropped_pins
-		all_pins = []
-		# get coords and trip id which is first in array
-		params[:locations].each do |k, v|
-			all_pins << v
-		end
 
-		trip_id = all_pins.slice!(0)[0]
+		location = Location.new
+		location.address = "sydney"
+		location.coordinates = params[:locations][:pin]
+		location.save!
+		
 
-		all_pins.each do |pin|
-			location = Location.new
 
-			# add coords and fill in for address
-			location.coordinates = pin
-			location.address = pin
+		# all_pins = []
+		# # get coords and trip id which is first in array
+		# params[:locations].each do |k, v|
+		# 	all_pins << v
+		# end
 
-			# add ids
-			location.trip_id = trip_id
-			location.user_id = @current_user.id
+		# trip_id = all_pins.slice!(0)[0]
 
-			location.save!
-		end
+		# all_pins.each do |pin|
+		# 	location = Location.new
+		# 	location.address = pin
+		# 	location.description = ""
+		# 		# add ids
+		# 	location.user_id = @current_user.id
+		# 	location.trip_id = trip_id
+		# 	location.coordinates = pin
+			
+		# 	location.save!
+		# end
 
 
 
 		
-		redirect_to home_path
 	end
 
 end

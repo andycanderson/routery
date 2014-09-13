@@ -9,6 +9,8 @@ Infoapp::Application.routes.draw do
   # home page
   get '/mylocations' => 'users#show', as: :home
   
+  get '/locations' => 'locations#index'
+
   get '/locations/:id' => 'locations#show'
   post '/locations/:id' => 'locations#create'
   patch '/locations/:id' => 'locations#update', as: :location_update
