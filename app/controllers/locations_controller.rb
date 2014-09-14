@@ -46,12 +46,15 @@ class LocationsController < ApplicationController
 	def dropped_pins
 
 		location = Location.new
-		location.address = "sydney"
+		location.address = params[:locations][:name]
+		location.description = ""
+		location.trip_id = ""
+		location.user_id = @current_user.id
 		location.coordinates = params[:locations][:pin]
 		location.save!
 		
 
-
+		
 		# all_pins = []
 		# # get coords and trip id which is first in array
 		# params[:locations].each do |k, v|
