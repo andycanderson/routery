@@ -64,6 +64,7 @@ function initialize() {
     // Create a marker for each place.
     marker = new google.maps.Marker({
       map: map,
+      // draggable pins feature
       draggable:true,
       // var image is referred
       icon: image,
@@ -71,11 +72,13 @@ function initialize() {
       position: place.geometry.location
     });
 
+    // DEBUG
     console.log(marker["position"] + " MARKERRR");
     
     location_name = place.name;
     passable = {pin: marker};
 
+    // DEBUG
     console.log(place.name);
     console.log(passable["pin"]["position"]["k"] + " and " + passable["pin"]["position"]["B"]);
     bounds.extend(place.geometry.location);
@@ -106,12 +109,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
       url: "/add_dropped",
       data: {locations: {pin: [passable["pin"]["position"]["k"], passable["pin"]["position"]["B"]], name: location_name}},
       dataType: "json",
-      success: function() {
+      success: function(data) {
+        if(data.url)
+        {
+          window.location.href = data.url;
+        }
+        console.log(data.url);
         console.log("works!!!");
       },
-      error: function()
+      error: function(data)
       {
         console.log("brokens");
+
       }
       });
         

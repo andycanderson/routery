@@ -53,6 +53,8 @@ class LocationsController < ApplicationController
 		location.coordinates = params[:locations][:pin]
 		location.save!
 
+		@redirect = '/mylocations'
+
 		# respond_to do |format|
 		# 	format.html {redirect_to :back}
 		# end
