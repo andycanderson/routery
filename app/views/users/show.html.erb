@@ -12,7 +12,7 @@
 <%end%>
 
 
-<div id="map_canvas"></div>
+<div id="show_map"></div>
 
 
 
@@ -29,34 +29,7 @@ $(document).ready(function () {
         styles: mapStyle
 
     };
-    map = new google.maps.Map($('#map_canvas')[0], myOptions);
-
-    // var addresses = ['England', 'France', 'Germany','Italy','Greece','Disneyland'];
-
-
-    // input addresses here
-    var addresses = [
-    // only run loop if there are @locations present
-    <%if @locations%>
-    <% @locations.each do |place| %>
-  "<%="#{place.coordinates[1]}, #{place.coordinates[0]}"%>",<%end%>
-  	<%end%>
-  ];
-  
-
-    for (var x = 0; x < addresses.length; x++) 
-    {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location;
-            
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-
-        });
-    }
+    map = new google.maps.Map($('#show_map')[0], myOptions);
 
 });
 </script>

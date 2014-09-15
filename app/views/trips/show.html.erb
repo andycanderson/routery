@@ -1,63 +1,216 @@
 <h1>show trip</h1>
-
 <p>Trip Name: <%=@trip.trip_name%></p>
-<%=form_for Location.new, url: "/locations/#{@trip_id}" do |f|%>
-	<%=f.text_field :address, placeholder: "Search Address" %>
-	<br>
-	<%=f.text_area :description, :cols => "19", :rows => "10", placeholder: "Enter Description" %>
-	<%=f.submit "Go!", :class => 'submit' %>
-<%end%>
+<ul>
+    <% @locations.each do |location|%>
+        <li><%=location.name%></li>
+    <%end%>
+</ul>
 
-<% @locations.each do |location|%>
-	<p>Location: <%=location.address%></p>
-	<p>Description: <%=location.description%></p>
-	<%= link_to 'edit', location_update_path(location.id)%> 
-	<%=link_to "delete", location_delete_path(location.id), :method => :delete%>
-<%end%>
 
-<div id="map_canvas"></div>
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map-canvas"></div>
+    <div id="save-locations">SAVE?</div>
+
+    <div id="trip-locations"></div>
 
 <script>
 
-$(document).ready(function () {
-    var map;
-    var elevator;
-    var myOptions = {
-        zoom: 1,
-        center: new google.maps.LatLng(0, 0),
-        // this makes terrain show
-        // mapTypeId: 'terrain',
-        styles: mapStyle
+var passable;
+var location_name;
+var initialize = function(){
 
-    };
-    map = new google.maps.Map($('#map_canvas')[0], myOptions);
+  $("#save-locations").hide();
+  // makes a map for div #map_canvas
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    // custom map colors
+    styles: mapStyle
 
-    // var addresses = ['England', 'France', 'Germany','Italy','Greece','Disneyland'];
+  });
 
+  // set bounds of the #map_canvas
+  var defaultBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(-33.8902, 151.1759),
+      new google.maps.LatLng(-33.8474, 151.2631));
+  map.fitBounds(defaultBounds);
 
-    // input addresses here
-    var addresses = [
-    // only run loop if there are @locations present
-    <%if @locations%>
-    <% @locations.each do |place| %>
-  "<%="#{place.coordinates[1]}, #{place.coordinates[0]}"%>",<%end%>
-  	<%end%>
-  ];
+  // Create the search box and link it to the UI element.
+  var input = /** @type {HTMLInputElement} */(
+      document.getElementById('pac-input'));
+
+  // specifies where the map should go and pushes the input into controls (array or object)?
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+  var searchBox = new google.maps.places.SearchBox((input));
+ 
   
-
-    for (var x = 0; x < addresses.length; x++) 
-    {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location;
-            
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-
-        });
+  // Listen for the event fired when the user selects an item from the
+  // pick list. Retrieve the matching places for that item.
+  google.maps.event.addListener(searchBox, 'places_changed', function() {
+    var places = searchBox.getPlaces();
+    // exits addListener if there are no place array is 0
+    if (places.length == 0) {
+      return;
     }
 
-});
+    // erases previous marker for multiple searches
+    if (typeof marker != 'undefined'){ marker.setMap(null) };
+
+    var bounds = new google.maps.LatLngBounds();
+    // limit to first search result of places search
+    var place = places[0];
+
+    var image = {
+      // edit url for custom standardized icons
+      url: place.icon,
+      size: new google.maps.Size(71, 71),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(17, 34),
+      scaledSize: new google.maps.Size(25, 25)
+    };
+
+    // Create a marker for each place.
+    marker = new google.maps.Marker({
+      map: map,
+      // draggable pins feature
+      draggable:true,
+      // var image is referred
+      icon: image,
+      title: place.name,
+      position: place.geometry.location
+    });
+
+    // DEBUG
+    console.log(marker["position"] + " MARKERRR");
+    
+    location_name = place.name;
+    passable = {pin: marker};
+
+    // DEBUG
+    console.log(place.name);
+    console.log(passable["pin"]["position"]["k"] + " and " + passable["pin"]["position"]["B"]);
+    bounds.extend(place.geometry.location);
+
+    map.fitBounds(bounds);
+    $("#save-locations").slideDown();
+  });
+
+  // Bias the SearchBox results towards places that are within the bounds of the
+  // current map's viewport.
+  google.maps.event.addListener(map, 'bounds_changed', function() {
+    var bounds = map.getBounds();
+    searchBox.setBounds(bounds);
+  });
+
+
+
+
+}
+
+
+
+  $("#save-locations").click(function(){
+      console.log("sending");
+      console.log(passable["pin"]["position"]["k"] + " and " + passable["pin"]["position"]["B"]);
+      
+      $.ajax({
+      method: "post",
+      url: "/add_dropped",
+      // the data that is passed via ajax
+      data: {locations: {pin: [passable["pin"]["position"]["k"], passable["pin"]["position"]["B"]], name: location_name, trip_id: "<%=@trip_id%>"}},
+      dataType: "json",
+      success: function(data) {
+        // if redirect url exists, redirect
+        if(data.url)
+        {
+          window.location.href = data.url;
+        }
+        console.log(data.url);
+        console.log("works!!!");
+      },
+      error: function(data)
+      {
+        console.log("broken");
+      }
+      });
+        
+    });
+
+
+// google.maps.event.addDomListener(window, 'load', initialize);
+
+
+$(document).ready(initialize);
+$(document).on('page:load', initialize);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OLD CODE
+// 
+
+// SCRIPT
+// 
+// $(document).ready(function () {
+//     var map;
+//     var elevator;
+//     var myOptions = {
+//         zoom: 1,
+//         center: new google.maps.LatLng(0, 0),
+//         // this makes terrain show
+//         // mapTypeId: 'terrain',
+//         styles: mapStyle
+
+//     };
+//     map = new google.maps.Map($('#map_canvas')[0], myOptions);
+
+//     // var addresses = ['England', 'France', 'Germany','Italy','Greece','Disneyland'];
+
+
+//     // input addresses here
+//     var addresses = [
+//     // only run loop if there are @locations present
+//     <%if @locations%>
+//     <% @locations.each do |place| %>
+//   "<%="#{place.coordinates[1]}, #{place.coordinates[0]}"%>",<%end%>
+//   	<%end%>
+//   ];
+  
+
+//     for (var x = 0; x < addresses.length; x++) 
+//     {
+//         $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+//             var p = data.results[0].geometry.location;
+            
+//             var latlng = new google.maps.LatLng(p.lat, p.lng);
+//             new google.maps.Marker({
+//                 position: latlng,
+//                 map: map
+//             });
+
+//         });
+//     }
+
+// });
 </script>

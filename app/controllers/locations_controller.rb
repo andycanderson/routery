@@ -44,15 +44,15 @@ class LocationsController < ApplicationController
 
 # pins that are dropped
 	def dropped_pins
-
+		
 		location = Location.new
-		location.address = params[:locations][:name]
+		location.name = params[:locations][:name]
 		location.description = ""
-		location.trip_id = ""
+		location.trip_id = params[:locations][:trip_id]
 		location.user_id = @current_user.id
 		location.coordinates = params[:locations][:pin]
 		location.save!
-
+		
 		@redirect = '/mylocations'
 
 		# respond_to do |format|

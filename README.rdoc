@@ -1,15 +1,12 @@
-==Routery 
+=Routery 
+---
+To Do List:
 
-Things that need to be worked on:
+* Trip show view  
+	1)show markers in current search window 
+	2)get the bounds to contain all points in default view on landing
 
-
-* Change the location model to - name, description, coordinates
-
-* Remove geocoder gem
-
-* After posting in locations redirect to edit page for info ALTERNATIVELY do that all in the same page
-
-* Add trip ID and user ID to locations adding
+* Options - After posting in locations redirect to edit page for info ALTERNATIVELY do that all in the same page
 
 * Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id
 
