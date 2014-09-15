@@ -13,8 +13,7 @@ var passable;
 var location_name;
 function initialize() {
 
-// markers to be generated on map
-  // var markers = [];
+
 
   // makes a map for div #map_canvas
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -41,20 +40,20 @@ function initialize() {
   // pick list. Retrieve the matching places for that item.
   google.maps.event.addListener(searchBox, 'places_changed', function() {
     var places = searchBox.getPlaces();
-    
     // exits addListener if there are no place array is 0
     if (places.length == 0) {
       return;
     }
-    // for (var i = 0, marker; marker = markers[i]; i++) {
-    //   marker.setMap(null);
-    // }
+
+    // erases previous marker for multiple searches
+    if (typeof marker != 'undefined'){ marker.setMap(null) };
 
     var bounds = new google.maps.LatLngBounds();
     // limit to first search result of places search
     var place = places[0];
 
     var image = {
+      // edit url for custom standardized icons
       url: place.icon,
       size: new google.maps.Size(71, 71),
       origin: new google.maps.Point(0, 0),
@@ -65,6 +64,8 @@ function initialize() {
     // Create a marker for each place.
     marker = new google.maps.Marker({
       map: map,
+      draggable:true,
+      // var image is referred
       icon: image,
       title: place.name,
       position: place.geometry.location
