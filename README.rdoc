@@ -1,18 +1,16 @@
-# Routery
+==Routery 
 
-*** 
-
-###Things that need to be worked on:
+Things that need to be worked on:
 
 
-+ Change the location model to - name, description, coordinates
+* Change the location model to - name, description, coordinates
 
-- Remove geocoder gem
+* Remove geocoder gem
 
-+ After posting in locations redirect to edit page for info ALTERNATIVELY do that all in the same page
+* After posting in locations redirect to edit page for info ALTERNATIVELY do that all in the same page
 
-+ Add trip ID and user ID to locations adding
+* Add trip ID and user ID to locations adding
 
-+ Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id
+* Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id
 
-***
+
