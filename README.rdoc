@@ -1,7 +1,7 @@
 =Routery 
 ---
 To Do List:
-
+* Note: coordinates are still stored backwards.
 * Trip show view  
 	1)show markers in current search window 
 	2)get the bounds to contain all points in default view on landing

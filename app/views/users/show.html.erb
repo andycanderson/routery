@@ -12,13 +12,14 @@
 <%end%>
 
 
-<div id="show_map"></div>
+<div id="show-map"></div>
 
 
 
 <script>
 
-$(document).ready(function () {
+var initialize = function(){
+
     var map;
     var elevator;
     var myOptions = {
@@ -29,7 +30,27 @@ $(document).ready(function () {
         styles: mapStyle
 
     };
-    map = new google.maps.Map($('#show_map')[0], myOptions);
+    map = new google.maps.Map($('#show-map')[0], myOptions);
 
-});
+    // input addresses here
+    var addresses = <%=@arr%>;
+
+    for (var x = 0; x < addresses.length; x++) 
+    {
+        var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
+        new google.maps.Marker({
+            position: latlng,
+            map: map
+            });
+
+    }
+
+ };
+
+ $(document).ready(initialize);
+ $(document).on('page:load', initialize);
+
+
+ 
+
 </script>

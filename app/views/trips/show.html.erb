@@ -29,10 +29,18 @@ var initialize = function(){
 
   });
 
+  // latlng = [array of whatevs]
+  // var latlngbounds = new google.maps.LatLngBounds();
+  // latlng.each(function(n){
+  //    latlngbounds.extend(n);
+  // });
+  // map.setCenter(latlngbounds.getCenter());
+  // map.fitBounds(latlngbounds); 
+
   // set bounds of the #map_canvas
   var defaultBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(-33.8902, 151.1759),
-      new google.maps.LatLng(-33.8474, 151.2631));
+      new google.maps.LatLng(34.0522342, -118.2436849),
+      new google.maps.LatLng(33.0522342, -117.2436849));
   map.fitBounds(defaultBounds);
 
   // Create the search box and link it to the UI element.
@@ -44,6 +52,16 @@ var initialize = function(){
 
   var searchBox = new google.maps.places.SearchBox((input));
  
+  var addresses = <%=@arr%>;
+
+  for (var x = 0; x < addresses.length; x++) 
+  {
+      var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
+      new google.maps.Marker({
+          position: latlng,
+          map: map
+          });
+  }
   
   // Listen for the event fired when the user selects an item from the
   // pick list. Retrieve the matching places for that item.
@@ -80,6 +98,7 @@ var initialize = function(){
       title: place.name,
       position: place.geometry.location
     });
+
 
     // DEBUG
     console.log(marker["position"] + " MARKERRR");

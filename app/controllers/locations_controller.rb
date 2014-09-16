@@ -48,9 +48,9 @@ class LocationsController < ApplicationController
 		location = Location.new
 		location.name = params[:locations][:name]
 		location.description = ""
-		location.trip_id = params[:locations][:trip_id]
 		location.user_id = @current_user.id
-		location.coordinates = params[:locations][:pin]
+		location.trip_id = params[:locations][:trip_id]
+		location.coordinates = [params[:locations][:pin][1].to_f, params[:locations][:pin][0].to_f]
 		location.save!
 		
 		@redirect = '/mylocations'

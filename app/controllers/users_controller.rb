@@ -20,9 +20,12 @@ class UsersController < ApplicationController
 
 	# shows all trips for user
 	def show
-		@trips = Trip.where(user_id: @current_user)
+		@trips = Trip.where(user_id: @current_user.id)
 
 		#populates map with user's locations 
-		@locations = Location.where(user_id: @current_user)
+		locations = Location.where(user_id: @current_user.id)
+		@arr = []
+		locations.each do |location| @arr<<location.coordinates end
+
 	end
 end

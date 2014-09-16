@@ -6,6 +6,9 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
     # gets all locations for this trip 
 		@locations = Location.where(trip_id: params[:id])
+    @arr = []
+    @locations.each do |location| @arr<<location.coordinates end
+
 	end
 
 	def create
