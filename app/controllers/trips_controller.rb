@@ -29,7 +29,8 @@ class TripsController < ApplicationController
 	end
 
   def destroy
-    Location.where(trip_id: params[:id]).destroy
+    # commented out because model has dependent: :destroy
+    # Location.where(trip_id: params[:id]).destroy
     Trip.find(params[:id]).destroy
     redirect_to user_path(@current_user)
   end
