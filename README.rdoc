@@ -2,9 +2,12 @@
 ---
 To Do List:
 * Note: coordinates are still stored backwards.
-* Trip show view  
-	1)show markers in current search window 
-	2)get the bounds to contain all points in default view on landing
+* Trip View 
+	1)get the bounds to contain all points in default view on landing.
+	2)make interface to add description and change name. (Same page or edit page)
+	
+* Home Page View
+	1)get locations to cluster.
 
 * Options - After posting in locations redirect to edit page for info ALTERNATIVELY do that all in the same page
 
