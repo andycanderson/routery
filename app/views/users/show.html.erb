@@ -7,7 +7,7 @@
 
 <%@trips.each do |trip|%>
 	<p>trip name: <%=trip.trip_name%></p>
-	<%=link_to "go to trip", trip_path(trip)%>
+	<%=link_to "go to trip", trip_path(trip)%> 
 	<%= link_to 'delete', trip, :method => :delete %>
 <%end%>
 

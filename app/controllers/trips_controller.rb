@@ -7,14 +7,13 @@ class TripsController < ApplicationController
     # gets all locations for this trip 
 		@locations = Location.where(trip_id: params[:id])
     @arr = []
-    @descriptions = []
-    @names = []
+    # @descriptions = []
+    # @names = []
     @locations.each do |location| 
         @arr<<location.coordinates
-        @names<<location.name
-        @descriptions<<location.description 
+        # @names<<location.name
+        # @descriptions<<location.description 
     end
-    binding.pry
 
 	end
 

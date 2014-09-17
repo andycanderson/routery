@@ -18,6 +18,8 @@
 
 var passable;
 var location_name;
+// need to initialize addresses first globally
+var addresses = <%=@arr%>;
 var initialize = function(){
 
   $("#save-locations").hide();
@@ -28,20 +30,43 @@ var initialize = function(){
     styles: mapStyle
 
   });
+  
+  // loads other coordinates from the same trip
+  for (var x = 0; x < addresses.length; x++) 
+  {
+      var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
+      new google.maps.Marker({
+          position: latlng,
+          map: map
+          });
+  }
 
-  // latlng = [array of whatevs]
-  // var latlngbounds = new google.maps.LatLngBounds();
-  // latlng.each(function(n){
-  //    latlngbounds.extend(n);
-  // });
-  // map.setCenter(latlngbounds.getCenter());
-  // map.fitBounds(latlngbounds); 
 
-  // set bounds of the #map_canvas
-  var defaultBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(34.0522342, -118.2436849),
-      new google.maps.LatLng(33.0522342, -117.2436849));
-  map.fitBounds(defaultBounds);
+ 
+
+    // set bounds of the #map_canvas - to contain all points
+    // if addresses is empty set default to los angeles else calculate 
+    if (addresses.length==0)
+    {   
+        // sets bounds
+        var bounds = new google.maps.LatLngBounds(
+        new google.maps.LatLng(33.3889848,-118.4549432),
+        new google.maps.LatLng(34.5402925,-117.3614264));
+        map.fitBounds(bounds);
+    }
+    else
+    {
+        var bounds = new google.maps.LatLngBounds();
+        // set bounds of the #map_canvas - to contain all points
+        var bounds = new google.maps.LatLngBounds();
+        for (i = 0; i < addresses.length; i++)
+        {
+            bounds.extend( new google.maps.LatLng(addresses[i][1], addresses[i][0]));
+        }
+        map.fitBounds(bounds);
+    }   
+
+      
 
   // Create the search box and link it to the UI element.
   var input = /** @type {HTMLInputElement} */(
@@ -51,17 +76,7 @@ var initialize = function(){
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
   var searchBox = new google.maps.places.SearchBox((input));
- 
-  var addresses = <%=@arr%>;
 
-  for (var x = 0; x < addresses.length; x++) 
-  {
-      var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
-      new google.maps.Marker({
-          position: latlng,
-          map: map
-          });
-  }
   
   // Listen for the event fired when the user selects an item from the
   // pick list. Retrieve the matching places for that item.
