@@ -54,38 +54,6 @@ class LocationsController < ApplicationController
 		location.save!
 		
 		@redirect = '/mylocations'
-
-		# respond_to do |format|
-		# 	format.html {redirect_to :back}
-		# end
-
-
-
-		
-
-
-		# all_pins = []
-		# # get coords and trip id which is first in array
-		# params[:locations].each do |k, v|
-		# 	all_pins << v
-		# end
-
-		# trip_id = all_pins.slice!(0)[0]
-
-		# all_pins.each do |pin|
-		# 	location = Location.new
-		# 	location.address = pin
-		# 	location.description = ""
-		# 		# add ids
-		# 	location.user_id = @current_user.id
-		# 	location.trip_id = trip_id
-		# 	location.coordinates = pin
-			
-		# 	location.save!
-		# end
-
-
-
 		
 	end
 
