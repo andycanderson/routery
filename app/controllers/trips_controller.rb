@@ -2,17 +2,18 @@ class TripsController < ApplicationController
 	before_filter :check_login
 
 	def show
+    @at_home = false
 		@trip_id = params[:id]
     @trip = Trip.find(params[:id])
     # gets all locations for this trip 
 		@locations = Location.where(trip_id: params[:id])
     @arr = []
-    # @descriptions = []
-    # @names = []
+    @descriptions = []
+    @names = []
     @locations.each do |location| 
         @arr<<location.coordinates
-        # @names<<location.name
-        # @descriptions<<location.description 
+        @names<<location.name
+        @descriptions<<location.description 
     end
 
 	end

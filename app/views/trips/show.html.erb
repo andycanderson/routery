@@ -12,7 +12,7 @@
             <%=f.text_field :description, value: location.description%>
             <%=f.submit "save changes!", :class => 'submit'%>
             <%= link_to "go to location", location_path(location)%>
-            <%= link_to "delete", location_delete_path, :method => :destroy %>
+            <%= link_to "delete", location_delete_path(location), :method => :delete %>
             <%end%>
         </div>
         <br>
@@ -35,29 +35,54 @@ var passable;
 var location_name;
 // need to initialize addresses first globally
 var addresses = <%=@arr%>;
+var names = <%=raw @names.to_json.gsub("</", "<\\/")%>
+var descriptions = <%=raw @descriptions.to_json.gsub("</", "<\\/")%>;
+
 var initialize = function(){
 
-  $("#save-locations").hide();
-  // makes a map for div #map_canvas
-  var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    // custom map colors
-    styles: mapStyle
+    // Hide Save Button at start of search
+    $("#save-locations").hide();
 
-  });
+    // makes a map for div #map_canvas
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        // custom map colors
+        styles: mapStyle
+
+    });
   
-  // loads other coordinates from the same trip
-  for (var x = 0; x < addresses.length; x++) 
-  {
-      var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
-      new google.maps.Marker({
-          position: latlng,
-          map: map
-          });
-  }
+    // initialize array of markers and info windows
+    var marker = [];
+    var infowindow = [];
+    // loads other coordinates from the same trip
+    for (var x = 0; x < addresses.length; x++) 
+    {
+          var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
+          marker[x] = new google.maps.Marker({
+              position: latlng,
+              map: map
+              });
 
+          var contentString =  '<h1>'+names[x].toString()+'</h1>'+'<p>' + descriptions[x].toString() + '</p>';
+          infowindow.push(new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 100
+          }));
+    }
 
- 
+    
+
+    // create function that's executed immediately
+    function callInfoWindow(x) {
+        return function() {
+            infowindow[x].open(map, marker[x]);
+        }
+    }
+    //creates all event listeners
+    for(var x = 0; x < marker.length; x++)
+    {
+        google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
+    }
 
     // set bounds of the #map_canvas - to contain all points
     // if addresses is empty set default to los angeles else calculate 
@@ -83,7 +108,7 @@ var initialize = function(){
 
       
 
-  // Create the search box and link it to the UI element.
+  // SEARCH FUNCTION
   var input = /** @type {HTMLInputElement} */(
       document.getElementById('pac-input'));
 
