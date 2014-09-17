@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
-	before_filter :check_login
+	before_filter :check_login, except: [:create]
 
 	def new
 	end
 
 	def create
+		binding.pry
 		user = User.new
 		user.email = params[:user][:email]
 		user.password = params[:user][:password]
