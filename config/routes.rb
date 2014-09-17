@@ -11,7 +11,7 @@ Infoapp::Application.routes.draw do
   
   get '/locations' => 'locations#index'
 
-  get '/locations/:id' => 'locations#show'
+  get '/locations/:id' => 'locations#show', as: :location
   post '/locations/:id' => 'locations#create'
   patch '/locations/:id' => 'locations#update', as: :location_update
   

@@ -3,7 +3,10 @@
 <ul>
     <% @locations.each do |location|%>
         <li><%=location.name%></li>
+        <%= link_to "go to location", location_path(location)%>
+        <%= link_to "delete", location_delete_path, :method => :destroy %>
     <%end%>
+
 </ul>
 
 
@@ -136,10 +139,6 @@ var initialize = function(){
     var bounds = map.getBounds();
     searchBox.setBounds(bounds);
   });
-
-
-
-
 }
 
 
