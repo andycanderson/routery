@@ -6,9 +6,9 @@
 	<%= text_field_tag :user_email, nil, placeholder: "Enter Email"%>
 	<br>
 	<%= password_field_tag :password, nil, placeholder: "Enter Password"%>
-	<%= flash[:notice] %>
 	<br>
 	<%= submit_tag "Login", :class => 'submit' %>
+	<div id="login_error"><%= flash[:notice] %></div>
 <% end %>
 
 <h3>Create Account</h3>

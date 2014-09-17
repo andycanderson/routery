@@ -24,10 +24,10 @@ class LocationsController < ApplicationController
 
 	def update
 		location = Location.find_by(id: params[:id])
-		location.address = params[:location][:address]
+		location.name = params[:location][:name]
 		location.description = params[:location][:description]
 		if location.save
-			redirect_to "/locations/#{location.id}"
+			redirect_to "/trips/#{location.trip_id}"
 		else
 			render 'new'
 		end

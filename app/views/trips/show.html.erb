@@ -3,8 +3,20 @@
 <ul>
     <% @locations.each do |location|%>
         <li><%=location.name%></li>
-        <%= link_to "go to location", location_path(location)%>
-        <%= link_to "delete", location_delete_path, :method => :destroy %>
+        <li><%=location.description%></li>
+        <div class="edit-button">EDIT
+        </div>
+        <div class="edit-location">
+            <%=form_for location, html: {method: "patch"} do |f|%>
+            <%=f.text_field :name, value: location.name%>
+            <%=f.text_field :description, value: location.description%>
+            <%=f.submit "save changes!", :class => 'submit'%>
+            <%= link_to "go to location", location_path(location)%>
+            <%= link_to "delete", location_delete_path, :method => :destroy %>
+            <%end%>
+        </div>
+        <br>
+        
     <%end%>
 
 </ul>
@@ -169,6 +181,11 @@ $("#save-locations").click(function(){
       }
       });
         
+});
+
+// shows or hides edit forms
+$('.edit-button').click(function(){
+    $(this).next(".edit-location").toggle();
 });
 
 

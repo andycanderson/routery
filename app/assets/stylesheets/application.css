@@ -63,7 +63,7 @@ table {
 
 
 
-
+/*GOOGLE MAPS*/
 #show-map{
 	width: 800px;
 	height: 300px;
@@ -120,3 +120,13 @@ table {
   font-size: 13px;
   font-weight: 300;
 }
+/*GOOGLE MAPS END*/
+
+
+/*Input form in trip show view*/
+.edit-location{
+  display: none;
+}
+
+
+

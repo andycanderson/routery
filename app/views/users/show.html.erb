@@ -7,7 +7,7 @@
 
 <%@trips.each do |trip|%>
 	<p>trip name: <%=trip.trip_name%></p>
-	<%=link_to "go to trip", trip_path(trip)%> 
+	<%= link_to "go to trip", trip_path(trip)%> 
 	<%= link_to 'delete', trip, :method => :delete %>
 <%end%>
 
@@ -49,7 +49,7 @@ var initialize = function(){
             map: map
             });
 
-        console.log(names.toString());
+        
         var contentString =  '<h1>'+names[x].toString()+'</h1>'+'<p>' + descriptions[x].toString() + '</p>';
         infowindow.push(new google.maps.InfoWindow({
             content: contentString,
@@ -57,13 +57,14 @@ var initialize = function(){
         }));
     }
 
+    // create function that's executed immediately
     function callInfoWindow(x) {
         return function() {
             infowindow[x].open(map, marker[x]);
         }
     }
 
-    console.log(infowindow[0]);
+    //creates all event listeners
     for(var x = 0; x < marker.length; x++)
     {
         google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
