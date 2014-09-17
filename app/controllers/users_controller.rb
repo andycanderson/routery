@@ -25,7 +25,12 @@ class UsersController < ApplicationController
 		#populates map with user's locations 
 		locations = Location.where(user_id: @current_user.id)
 		@arr = []
-		locations.each do |location| @arr<<location.coordinates end
-
+		@descriptions = []
+    @names = []
+		locations.each do |location| 
+			@arr<<location.coordinates
+			@names<<[location.name]
+			@descriptions<<[location.description] 
+		end
 	end
 end

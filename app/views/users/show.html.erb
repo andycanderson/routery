@@ -34,22 +34,46 @@ var initialize = function(){
 
     // input addresses here
     var addresses = <%=@arr%>;
+    var names = <%=raw @names.to_json.gsub("</", "<\\/")%>
+    var descriptions = <%=raw @descriptions.to_json.gsub("</", "<\\/")%>;
+    
 
+    
+    var marker = [];
+    var infowindow = [];
     for (var x = 0; x < addresses.length; x++) 
     {
         var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
-        new google.maps.Marker({
+        marker[x] = new google.maps.Marker({
             position: latlng,
             map: map
             });
+
+        console.log(names.toString());
+        var contentString =  '<h1>'+names[x].toString()+'</h1>'+'<p>' + descriptions[x].toString() + '</p>';
+        infowindow.push(new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 100
+        }));
     }
 
+    function callInfoWindow(x) {
+        return function() {
+            infowindow[x].open(map, marker[x]);
+        }
+    }
+
+    console.log(infowindow[0]);
+    for(var x = 0; x < marker.length; x++)
+    {
+        google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
+    }
  };
+
+
+
+
 
  $(document).ready(initialize);
  $(document).on('page:load', initialize);
-
-
- 
-
 </script>
