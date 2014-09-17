@@ -7,6 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Location.destroy_all
+User.destroy_all
+Trip.destroy_all
+
 
 
 location = Location.create([
