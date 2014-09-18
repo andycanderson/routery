@@ -3,14 +3,15 @@
 To Do List:
 * Note: coordinates are still stored backwards.
 * Trip View 
-	1)make divs form_for that show toggle when edit button is pressed with patch method. Also destroy.
+	1)
 	2)make interface to add description and change name. (Same page or edit page)
 
 	
 * Home Page View
 	1)get locations to cluster.
+	2)fix default zoom on home view
 
 
-* Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id
+* Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id. Mostly done.
 
 

@@ -52,13 +52,13 @@ var initialize = function(){
     });
   
     // initialize array of markers and info windows
-    var marker = [];
+    var pins = [];
     var infowindow = [];
     // loads other coordinates from the same trip
     for (var x = 0; x < addresses.length; x++) 
     {
           var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
-          marker[x] = new google.maps.Marker({
+          pins[x] = new google.maps.Marker({
               position: latlng,
               map: map
               });
@@ -75,13 +75,13 @@ var initialize = function(){
     // create function that's executed immediately
     function callInfoWindow(x) {
         return function() {
-            infowindow[x].open(map, marker[x]);
+            infowindow[x].open(map, pins[x]);
         }
     }
     //creates all event listeners
-    for(var x = 0; x < marker.length; x++)
+    for(var x = 0; x < pins.length; x++)
     {
-        google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
+        google.maps.event.addListener(pins[x], 'click', callInfoWindow(x));
     }
 
     // set bounds of the #map_canvas - to contain all points
