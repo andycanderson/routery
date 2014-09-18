@@ -1,18 +1,26 @@
 <h1>show trips</h1>
 
 <%= form_for Trip.new do |f| %>
-	<%= f.text_field :trip_name, placeholder: "Enter New Trip" %>
+	<%= f.text_field :name, placeholder: "Enter New Trip" %>
 	<%= f.submit "New Trip", :class => 'submit' %>
 <% end %>
 
 <%@trips.each do |trip|%>
-	<p>trip name: <%=trip.trip_name%></p>
-	<%= link_to "go to trip", trip_path(trip)%> 
-	<%= link_to 'delete', trip, :method => :delete %>
+	<p>trip name: <%= link_to "#{trip.name}", trip_path(trip)%></p>
+    <div class="edit-button">EDIT</div>
+    <div class="edit-location">
+        <%=form_for trip, html: {method: "patch"} do |f|%>
+        <%=f.text_field :name, value: trip.name%>
+        <%=f.submit "save changes!", :class => 'submit'%>
+        <%= link_to 'delete', trip, :method => :delete %>
+
+        <%end%>
+    </div>
+	
 <%end%>
 
 
-<div id="show-map"></div>
+<div id="map-canvas"></div>
 
 
 
@@ -30,7 +38,7 @@ var initialize = function(){
         styles: mapStyle
 
     };
-    map = new google.maps.Map($('#show-map')[0], myOptions);
+    map = new google.maps.Map($('#map-canvas')[0], myOptions);
 
     // input addresses here
     var addresses = <%=@arr%>;
@@ -72,9 +80,14 @@ var initialize = function(){
     {
         google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
     }
+
+
  };
 
-
+ // shows or hides edit forms
+ $('.edit-button').click(function(){
+     $(this).next(".edit-location").toggle();
+ });
 
 
 

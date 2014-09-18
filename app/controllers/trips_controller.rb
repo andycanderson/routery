@@ -19,24 +19,30 @@ class TripsController < ApplicationController
 	end
 
 	def create
-		trip = Trip.new(params.require(:trip).permit(:trip_name))
+		trip = Trip.new(params.require(:trip).permit(:name))
 		
-		trip.trip_name = params[:trip][:trip_name]
+		trip.name = params[:trip][:name]
 		# add user id to trip created
 		trip.user = @current_user
+
 		if trip.save!
-			redirect_to user_path(@current_user)
+			redirect_to trip_path(trip.id)
 		else
-			redirect_to "/mylocations"
+			redirect_to home_path
 		end
 	end
 
 	def update
+    trip = Trip.find(params[:id])
+    trip.name = params[:trip][:name]
+    trip.save!
+
+    redirect_to home_path 
 
 	end
 
   def destroy
-    # commented out because model has dependent: :destroy
+    # model has dependent: :destroy, which destroy associated locations
     # Location.where(trip_id: params[:id]).destroy
     Trip.find(params[:id]).destroy
     redirect_to user_path(@current_user)

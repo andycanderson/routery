@@ -1,4 +1,4 @@
-<h1>TripMapper</h1>
+<h1>Routery</h1>
 <h3>Login</h3>
 
 <!-- posts to sessions#create to validate login info -->
@@ -8,7 +8,7 @@
 	<%= password_field_tag :password, nil, placeholder: "Enter Password"%>
 	<br>
 	<%= submit_tag "Login", :class => 'submit' %>
-	<div id="login_error"><%= flash[:notice] %></div>
+	<div id="login_error"><%= flash[:login] %></div>
 <% end %>
 
 <h3>Create Account</h3>
@@ -22,4 +22,5 @@
 	<%= f.password_field :password_confirmation , placeholder: "Confirm Password"%>
 	<br>
 	<%= f.submit "Create Account", :class => 'submit'%>
+	<div id="create_user_error"><%= flash[:create] %></div>
 <% end %>

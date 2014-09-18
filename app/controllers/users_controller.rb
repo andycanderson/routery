@@ -1,12 +1,10 @@
 class UsersController < ApplicationController
 	before_filter :check_login, except: [:create]
 
-	def new
-	end
-
 	def create
 		user = User.new
-		user.email = params[:user][:email]
+		# saves users email in downcase form
+		user.email = params[:user][:email].downcase
 		user.name = params[:user][:name]
 		user.password = params[:user][:password]
 		user.password_confirmation = params[:user][:password_confirmation]
@@ -15,7 +13,7 @@ class UsersController < ApplicationController
 			session[:user_id] = user.id.to_s
 			redirect_to "/mylocations"
 		else
-			redirect_to '/'
+			redirect_to root_path, :flash => { :create => "invalid email or name input" }
 		end
 	end	
 

@@ -4,5 +4,5 @@ class Trip
   belongs_to :user
   has_many :locations, dependent: :destroy
 
-  field :trip_name, type: String
+  field :name, type: String
 end

@@ -1,6 +1,6 @@
 <h1>show a single trip</h1>
 <h2><%=@trip_name%></h2>
-<div id="show-map"></div>
+<div id="map-canvas"></div>
 
 <script>
 	var initialize = function(){
@@ -13,7 +13,7 @@
         styles: mapStyle
 
     };
-    map = new google.maps.Map($('#show-map')[0], myOptions);
+    map = new google.maps.Map($('#map-canvas')[0], myOptions);
 
     // input addresses here
     var addresses = <%=@arr%>;

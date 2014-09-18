@@ -1,7 +1,6 @@
 =Routery 
 ---
 To Do List:
-* Note: coordinates are still stored backwards.
 * Trip View 
 	1)
 	2)make interface to add description and change name. (Same page or edit page)

@@ -64,17 +64,17 @@ table {
 
 
 /*GOOGLE MAPS*/
-#show-map{
-	width: 800px;
-	height: 300px;
-}
 
 #map-canvas {
-  width: 800px;
-  height: 300px;
+  position:absolute;
+  width: 90%;
+  height: 90%;
   margin: 0px;
-  padding: 0px
+  padding: 0px;
+  z-index: -1000;
 }
+
+
 
 /*search box styling*/
 .controls {
