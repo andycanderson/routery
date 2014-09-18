@@ -57,6 +57,9 @@ var initialize = function(){
         }));
     }
 
+    // make clusters for markers
+    var markerCluster = new MarkerClusterer(map, marker);
+
     // create function that's executed immediately
     function callInfoWindow(x) {
         return function() {
