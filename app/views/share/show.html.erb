@@ -1,0 +1,63 @@
+<h1>show a single trip</h1>
+<h2><%=@trip_name%></h2>
+<div id="show-map"></div>
+
+<script>
+	var initialize = function(){
+
+    var map;
+    var elevator;
+    var myOptions = {
+        zoom: 1,
+        center: new google.maps.LatLng(0, 0),
+        styles: mapStyle
+
+    };
+    map = new google.maps.Map($('#show-map')[0], myOptions);
+
+    // input addresses here
+    var addresses = <%=@arr%>;
+    var names = <%=raw @names.to_json.gsub("</", "<\\/")%>
+    var descriptions = <%=raw @descriptions.to_json.gsub("</", "<\\/")%>;
+    
+
+    
+    var marker = [];
+    var infowindow = [];
+    for (var x = 0; x < addresses.length; x++) 
+    {
+        var latlng = new google.maps.LatLng(addresses[x][1], addresses[x][0]);
+        marker[x] = new google.maps.Marker({
+            position: latlng,
+            map: map
+            });
+
+        
+        var contentString =  '<h1>'+names[x].toString()+'</h1>'+'<p>' + descriptions[x].toString() + '</p>';
+        infowindow.push(new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 100
+        }));
+    }
+
+    // create function that's executed immediately
+    function callInfoWindow(x) {
+        return function() {
+            infowindow[x].open(map, marker[x]);
+        }
+    }
+
+    //creates all event listeners
+    for(var x = 0; x < marker.length; x++)
+    {
+        google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
+    }
+ };
+
+
+
+
+
+ $(document).ready(initialize);
+ $(document).on('page:load', initialize);
+</script>

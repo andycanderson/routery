@@ -17,4 +17,8 @@ Infoapp::Application.routes.draw do
   delete '/locations' => 'locations#destroy', as: :location_delete
 
   post '/add_dropped' => 'locations#dropped_pins'
+
+  get '/sharelink' => 'share#getlink'
+  get '/share/:id' => 'share#show'
+  get '/shareall/:id' => 'share#index'
 end
