@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
 		else
 			# redirect_to root_path for invalid email/pw
 			# also makes a flash notice for user
-			redirect_to root_path, :flash => { :login => "incorrect email or password" }
+			redirect_to root_path, :flash => { :login => "Incorrect email or password" }
 		end
 	end
 

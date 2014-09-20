@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 			session[:user_id] = user.id.to_s
 			redirect_to "/mylocations"
 		else
-			redirect_to root_path, :flash => { :create => "invalid email or name input" }
+			redirect_to root_path(anchor: 'create-title'), :flash => { :create => "Invalid email or name input" }
 		end
 	end	
 

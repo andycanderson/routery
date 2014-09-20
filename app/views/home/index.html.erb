@@ -1,26 +1,85 @@
-<h1>Routery</h1>
-<h3>Login</h3>
+<div id="block-one">
+	<h1 id="site-title">routery</h1>
+	<h2 id="motto">Go places. Share places.</h2>
+	<div id="login_form">
+		<%= form_tag '/sessions' do |f| %>
+			<div id="login_error"><%= flash[:login] %></div>
+			<%= text_field_tag :user_email, nil, placeholder: "Enter Email", class: "fields" ,id: "login_email"%>
+			<%= password_field_tag :password, nil, placeholder: "Enter Password", class: "fields", id: "login_password"%>
+			<%= submit_tag "Login", :class => 'submit'%>
+			<a href="#create-title"><div id="signup-link">Sign up?</div></a>
+		<% end %>
+	</div>
+</div>
 
-<!-- posts to sessions#create to validate login info -->
-<%= form_tag '/sessions' do |f| %>
-	<%= text_field_tag :user_email, nil, placeholder: "Enter Email"%>
-	<br>
-	<%= password_field_tag :password, nil, placeholder: "Enter Password"%>
-	<br>
-	<%= submit_tag "Login", :class => 'submit' %>
-	<div id="login_error"><%= flash[:login] %></div>
-<% end %>
+<div id="divider"></div>
 
-<h3>Create Account</h3>
-<%= form_for User.new do |f| %>
-	<%= f.email_field :email, placeholder: "Enter Email" %>
-	<br>
-	<%= f.text_field :name, placeholder: "Enter Name" %>
-	<br>
-	<%= f.password_field :password, placeholder: "Enter Password" %>
-	<br>
-	<%= f.password_field :password_confirmation , placeholder: "Confirm Password"%>
-	<br>
-	<%= f.submit "Create Account", :class => 'submit'%>
-	<div id="create_user_error"><%= flash[:create] %></div>
-<% end %>
+<div id="block-two">
+	<h2 id="so">What is Routery <%=image_tag "question.svg", class: "flaticons", id: "question"%></h2>
+	<p id="thena">Remember the last time you asked a friend for recommendations before traveling?</p>
+	<p id="thenb">Or those local food spots that you just don't want to forget?</p>	
+</div>
+
+<div id="block-three">
+	<div id="block-three-container">
+		<div class="textcenter">
+			<%=image_tag "train.svg", class: "flaticons"%>
+			<%=image_tag "airplane.svg", class: "flaticons"%>
+			<%=image_tag "island.svg", class: "flaticons"%>
+			<%=image_tag "burger.svg", class: "flaticons"%>
+			<%=image_tag "mountain.svg", class: "flaticons"%>
+		</div>
+		<p id="abouta">Routery is all about the places you've been and experiences you want to remember.</p>
+
+		<div class="block">
+			<div></div>
+			<div class="pic">
+				<%=image_tag "save.svg", class: "flaticons", id: "save"%>
+			</div>
+			<div class="lined left">
+				<p id="aboutb">You can easily tag and save anything from favorite spots to in-the-middle-of-nowhere locations with comments.</p>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<div id="block-four">
+	<div class="block">
+			<div class="lined">
+				<p id="aboutc">Revisit that scenic hiking trail or that hole in the wall restaurant.</p>
+			</div>
+			<div class="pic">
+				<%=image_tag "shop.svg", class: "flaticons", id: "shop"%>
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<div class="block">
+			<div class="lined">
+				<p id="aboutd">Share your places with friends.</p>
+			</div>
+			<div class="pic">
+				<%=image_tag "share.svg", class: "flaticons", id: "share"%>
+			</div>
+		</div>
+</div>
+
+ 
+
+<div id="block-five">
+	<!-- posts to sessions#create to validate login info -->
+	
+	<div id="create-account-form">
+		<h3 id="create-title">Create Account</h3>
+		<%= form_for User.new do |f| %>
+			<%= f.email_field :email, placeholder: "Enter Email", id: "create_email", class: "fields"%>
+			<%= f.text_field :name, placeholder: "Enter Name", id: "create_name" , class: "fields"%>
+			<%= f.password_field :password, placeholder: "Enter Password", id: "create_password" , class: "fields"%>
+			<%= f.password_field :password_confirmation , placeholder: "Confirm Password", id: "password_confirm", class: "fields"%>
+			<%= f.submit "Create Account", :class => 'submit', :id => "create_submit"%>
+			<div id="create_user_error"><%= flash[:create] %></div>
+		<% end %>
+	</div>
+	<h2 id="title-footer">routery</h2>
+</div>

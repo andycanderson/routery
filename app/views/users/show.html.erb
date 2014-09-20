@@ -58,7 +58,7 @@ var initialize = function(){
             });
 
         
-        var contentString =  '<h1>'+names[x].toString()+'</h1>'+'<p>' + descriptions[x].toString() + '</p>';
+        var contentString =  '<div class="info-container"><h1 class="info-header">'+names[x].toString()+'</h1>'+'<p class="info-body">' + descriptions[x].toString() + '</p></div>';
         infowindow.push(new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 100
