@@ -19,7 +19,7 @@ Infoapp::Application.routes.draw do
   # post '/locations/:id' => 'locations#create'
   patch '/locations/:id' => 'locations#update', as: :location_update
   
-  delete '/locations' => 'locations#destroy', as: :location_delete
+  delete '/locations/:id' => 'locations#destroy', as: :location_delete
 
   # new location
   post '/add_dropped' => 'locations#dropped_pins'

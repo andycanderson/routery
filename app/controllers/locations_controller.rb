@@ -34,7 +34,7 @@ class LocationsController < ApplicationController
 	end
 
 	def destroy
-		location = Location.find(params[:format])
+		location = Location.find(params[:id])
 		trip_id = location.trip_id
 		location.destroy
 
