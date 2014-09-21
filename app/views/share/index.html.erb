@@ -1,5 +1,4 @@
-<h1>Share All</h1>
-<h2><%=@user_name%>'s Locations</h2>
+<h1><%=@user_name%>'s Locations</h1>
 <div id="map-canvas"></div>
 
 <script>
@@ -9,7 +8,7 @@ var initialize = function(){
     var map;
     var elevator;
     var myOptions = {
-        zoom: 1,
+        zoom: 2,
         center: new google.maps.LatLng(0, 0),
         styles: mapStyle
 
@@ -37,9 +36,12 @@ var initialize = function(){
         var contentString =  '<div class="info-container><h1 class="info-header">'+names[x].toString()+'</h1>'+'<p info-body>' + descriptions[x].toString() + '</p></div>';
         infowindow.push(new google.maps.InfoWindow({
             content: contentString,
-            maxWidth: 100
+            maxWidth: 200
         }));
     }
+
+    // make clusters for markers
+    var markerCluster = new MarkerClusterer(map, marker);
 
     // create function that's executed immediately
     function callInfoWindow(x) {

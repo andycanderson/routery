@@ -12,9 +12,7 @@
                       <%=f.text_field :name, value: location.name, placeholder: "Enter Location Name", class: "location-name-field"%>
                       <%=f.text_area :description, value: location.description, placeholder: "Enter Location Description", class: "location-description-area"%>
                       <%=f.submit "Save", :class => 'submit submit-trip-change save-location-change'%>
-                      <%= link_to location, :method => :delete, :class => "delete-location" do%>
-                        <%=image_tag "nuclear.svg", :class => "delete-icon", :id => "location-delete"%>Delete
-                      <%end%>
+                      <%= link_to "Delete", location, :method => :delete, :class => "delete-location"%>
                     <%end%>
                 </div>
               </div>
@@ -46,7 +44,7 @@ var descriptions = <%=raw @descriptions.to_json.gsub("</", "<\\/")%>;
 var initialize = function(){
 
     // Hide Save Button at start of search
-    $("#save-locations").hide();
+    $("#save-location").hide();
 
     // makes a map for div #map_canvas
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -160,10 +158,6 @@ var initialize = function(){
       title: place.name,
       position: place.geometry.location
     });
-
-
-    // DEBUG
-    console.log(marker["position"] + " MARKERRR");
     
     location_name = place.name;
     passable = {pin: marker};
@@ -179,7 +173,7 @@ var initialize = function(){
     map.setZoom(15);
 
     // show save button
-    $("#save-location").slideDown();
+    $("#save-location").fadeIn();
   });
 
   // Bias the SearchBox results towards places that are within the bounds of the
@@ -188,19 +182,17 @@ var initialize = function(){
     var bounds = map.getBounds();
     searchBox.setBounds(bounds);
   });
+}
 
   // shows or hides edit forms
 $('.edit-button').click(function(){
     $(this).next(".edit-location").toggle();
 });
-}
 
 
-
-
-$("#save-locations").click(function(){
-      console.log("sending");
-      console.log(passable["pin"]["position"]["k"] + " and " + passable["pin"]["position"]["B"]);
+$("#save-location").click(function(){
+      // console.log("sending");
+      // console.log(passable["pin"]["position"]["k"] + " and " + passable["pin"]["position"]["B"]);
       
       $.ajax({
       method: "post",
@@ -215,7 +207,7 @@ $("#save-locations").click(function(){
           window.location.href = data.url;
         }
         console.log(data.url);
-        console.log("works!!!");
+        console.log("works");
       },
       error: function(data)
       {
