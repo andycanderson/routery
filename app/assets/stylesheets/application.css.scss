@@ -1,0 +1,755 @@
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *=
+ *= require_self
+ *= require_tree .
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+$container-width: 700px;
+$font-sizef: 1em;
+$purple:rgba(0,100,250,1);
+/*$purple: rgba(100,100,200,1);*/
+$red: rgba(230,0,50,1);
+$border-curve: 2px;
+$future: Futura, "Trebuchet MS", Arial, sans-serif;
+$rale: 'Raleway', sans-serif;
+
+
+/*past reset*/
+
+/*GOOGLE MAPS*/
+
+#map-canvas {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 70%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: -1000;
+}
+
+
+
+/*search box styling*/
+.controls {
+  margin-top: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  padding: 0 11px 0 13px;
+  width: 400px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+  margin-left: -1px;
+  padding-left: 14px;  /* Regular padding-left + 1. */
+  width: 401px;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+#target {
+  width: 345px;
+}
+/*info container*/
+.info-header{
+  text-align: left;
+  font-size: 1.5em;
+  font-family: $future;
+}
+.info-container{
+  padding:10px 0 10px 10px;
+}
+.info-body{
+  font-family: $rale;
+}
+/*GOOGLE MAPS END*/
+
+
+
+
+
+/*general*/
+body{
+  font-family: $future;
+}
+a{
+  text-decoration: none;
+}
+a:visted{
+  color:#5F1A8B;
+}
+.flaticons{
+  height:100px;
+  width:100px;
+}
+/*text align center*/
+.textcenter{
+  text-align: center;
+}
+.block{
+  display: block;
+  margin:200px auto;
+}
+.lined{
+  max-width:650px;
+  display:inline-block;
+}
+.pic{
+  width: 200px;
+  display:inline-block;
+}
+.left{
+  text-align: left;
+}
+
+/*nav bar*/
+.nav{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width:30%;
+  height:50px;
+  background-color: rgba(200,200,200,1);
+  font-family: $rale;
+  text-align: center;
+}
+#nav-padding{
+  max-width: 90%;
+  margin: 4% auto;
+}
+#home, #logout, #nav-header{
+  margin: 0 5%;
+}
+#home{
+  color:white;
+}
+#logout{
+  color:white;
+  font-size: 1em;
+}
+#home:hover, #logout:hover{
+  color:rgba(100,100,100,1); 
+}
+#nav-header{
+  cursor:pointer;
+  color:white;
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Monoton', cursive;
+}
+#nav-header:hover + #go{
+  display:inline-block;
+}
+#go{
+  display:none;
+  position:absolute;
+  top:150%;
+  left:150%;
+  z-index: 100;
+  /*box-shadow: 0 0 100px gray;*/
+}
+#comment-bubble{
+  height:400px;
+  width:auto;
+}
+#bubble-text{
+  position:absolute;
+  color:white;
+  font-size: 3em;
+  top: 50%;
+  left: 13%;
+}
+/*end of nav*/
+
+.edit-button{
+  color: $purple;
+  border:1px solid $purple;
+  display:inline-block;
+  padding:5px 15px;
+  cursor:pointer;
+  border-radius: $border-curve;
+}
+input.submit-trip-change:hover, .edit-button:hover{
+  color:white;
+  background-color: $purple;
+}
+/*Input form in trip show view*/
+.edit-location{
+  display: none;
+}
+
+.shareable{
+  display: block;
+  text-align:center;
+  margin-top: 10px;
+  color:$purple;
+}
+
+/*end of general*/
+
+/*Login Page*/
+/*1st div*/
+#block-one{
+  background-size: cover;
+  background: -webkit-linear-gradient(left top, rgba(240,240,240,1) , rgba(80,200,180,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(240,240,240,1) , rgba(80,200,180,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(240,240,240,1) , rgba(80,200,180,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(240,240,240,1) , rgba(80,200,180,1)); /* Standard syntax */
+  width:100%;
+  background-attachment: fixed;
+  padding: 5% 0 40%;
+}
+#site-title{
+  text-align: center;
+  max-width: $container-width;
+  color:white;
+  margin:0 auto;
+  font-size: 8em;
+  font-family: 'Monoton', cursive;
+}
+#motto{
+  color:white;
+  font-size: 2em;
+  text-align: center;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding:30px;
+  font-family: $rale;
+}
+#login_form{
+  max-width: $container-width*.5;
+  /*cause of signup*/
+  padding:70px 40px 40px 40px;
+  text-align: center;
+  margin:0 auto;
+  background-color: rgba(255,255,255,.5);
+}
+#login_email, #login_password{
+  display:block;
+  margin:1em auto;
+  padding:0;
+  border:none;
+  width:200px;
+  padding:10px;
+  font-size: $font-sizef;
+  font-family: $future;
+}
+/*sets auto fill to custom color*/
+.fields:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgba(230,230,230,1) inset;
+}
+.submit{
+  margin: 0 auto;
+  display:block;
+  border:none;
+  padding:10px 20px;
+  font-size: $font-sizef;
+  font-family: $future;
+  background-color: rgba(255,255,255,1); 
+}
+.submit:hover{
+  background-color: rgba(255,255,255,.5);
+}
+#login_error{
+  font-style: italic;
+  color:red;
+  font-family: $future;
+}
+#signup-link{
+  font-family: $future;
+  color:#5F1A8B;
+  display: inline-block;
+  margin-top: 20px;
+}
+#signup-link:hover{
+  opacity:.8;
+}
+
+
+/*between 1 and 2 slides*/
+#divider{
+  height:3px;
+  width:100%;
+  background-color: rgba(230,230,230,.3);
+  /*background-image: image-url('divide.png');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  opacity: .5;
+}
+
+/*2nd div*/
+#block-two{
+  display:block;
+  width:100%;
+  height:300px;
+  background-attachment: fixed;
+  background-image:image-url('hike.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding:40% 0;
+  font-family: $rale;
+}
+#so{
+  font-size: 6em;
+  color:black;
+  cursor:pointer;
+}
+#question{
+  vertical-align: top;
+}
+#thena, #thenb{
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  font-size: 2em;
+  text-align: left;
+}
+#thenb{
+  margin: 30px auto 0 auto;
+}
+
+
+
+/*3rd div*/
+#block-three{
+  display: block;
+  width:100%;
+/*  background-attachment: fixed;
+*/ /* background-image:image-url('hike.jpg'); 
+  background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  text-align: center;
+  padding:30% 0;
+  font-family: $rale;
+}
+#block-three-container{
+  max-width: 900px;
+  text-align: left;
+  margin: 0 auto;
+}
+#abouta, #aboutb, #aboutc, #aboutd{
+  font-size: 2em;
+}
+#abouta{
+  margin: 30px 0 0 0;
+}
+#aboutc{
+  text-align: left;
+}
+#save{
+  vertical-align: -.5em;
+}
+
+/*4th div*/
+#block-four{
+  display:block;
+  width:100%;
+  background-attachment: fixed;
+  background-image:image-url('switzerland.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding:30% 0;
+  font-family: $rale;
+}
+#shop{
+  vertical-align: -.5em;
+}
+#share{
+  vertical-align: -2em;
+}
+.spacer{
+  margin-top: 800px;
+}
+
+/*in between 4th and 5th*/
+#divider-bottom{
+  height:4px;
+  background-color: rgba(100,100,100,1)
+}
+
+/*5th div*/
+#block-five{
+  display:block;
+  width:100%;
+  text-align: center;
+  padding:40% 0;
+}
+#create-account-form{
+  max-width: $container-width;
+  padding:30px 0 30px 0;
+  text-align: center;
+  margin:0 auto;
+}
+#create-title, #create_email, #create_name, #create_password, #password_confirm, #submit_create{
+  font-family: $future;
+  display: block;
+  margin:1em auto;
+  padding:0;
+  width:300px;
+  padding:10px;
+  font-size: $font-sizef;
+  font-family: $future;
+}
+#create-title{
+  font-size: 2em;
+  margin: 10px auto;
+}
+#create_email, #create_name, #create_password, #password_confirm{
+  border:1px solid rgba(230,230,230,1);
+}
+#create_submit{
+  background-color: rgba(200,200,200,1);
+  padding:15px 25px 15px 25px;
+}
+#create_submit:hover{
+  background-color: rgba(180,180,180,1);
+  color:white;
+  cursor: pointer;
+}
+#create_submit::before{
+  content: "name: asdf";
+}
+#create_user_error{
+  font-style: italic;
+  color:red;
+  font-family: $future;
+  margin: 20px 0;
+}
+#title-footer{
+  text-align: center;
+  max-width: $container-width;
+  margin:0 auto;
+  font-size: 2em;
+  font-family: 'Monoton', cursive;
+}
+/*END OF login PAGE*/
+
+
+/*Home Page*/
+#home-container{
+  position: absolute;
+  top: 70px;
+  width:30%;
+}
+#home-padding{
+  padding: 0 5% 5% 5%;
+}
+#home-title{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: $future;
+  
+}
+
+/*new trip form*/
+#new_trip_form{
+  text-align: center;
+  width:100%;
+}
+#new_trip_field{
+  display: inline-block;
+  width:50%;
+  padding:10px;
+  font-size: $font-sizef;
+  font-family: $future;
+  border:1px solid rgba(200,200,200,1);
+}
+#new_trip_submit{
+  display: inline-block;
+  padding:11px 4% 11px 4%;
+  cursor: pointer;
+  background-color: rgba(0,100,230,1);
+  border-radius: $border-curve;
+
+}
+#new_trip_submit:hover{
+  background-color: rgba(0,100,255,1);
+  color:white;
+}
+.submit-icon{
+  height:20px;
+  width:20px;
+  vertical-align: -.3em;
+}
+/*end of new trip form*/
+
+/*all trips*/
+.trips-container{
+  max-width: 77%;
+  height: 400px;
+  overflow: auto;
+  margin: 0 auto 0 auto;
+  border:1px solid rgba(200,200,200,1);
+  padding:1% 7%;
+}
+.trip-box{
+  margin:10px 0 20px;  
+}
+.trip-name{
+  color:$purple;
+  font-size: 1.5em;
+  display:inline-block;
+  margin-bottom:5px;
+  font-family: $future;
+}
+.trip-name:visited{
+  color:$purple;
+}
+.trip-name:hover{
+  color:rgba(230,50,50,1);
+  text-decoration: underline;
+}
+.indicator{
+  display:none;
+  vertical-align: -.1em;
+  font-size: 1.5em;
+  color:rgba(230,50,50,1);
+  font-family: $future;
+}
+.trip-name:hover + .indicator{
+  display:inline-block;
+}
+
+.edit-trip-field{
+  display: inline-block;
+  width:85%;
+  padding:10px;
+  font-size: $font-sizef;
+  font-family: $future;
+  border:1px solid rgba(200,200,200,1);
+}
+.submit-trip-change{
+  padding: 2.5px 20px;
+  text-align: left;
+  display:inline-block;
+  color: $purple;
+  /*border:1px solid $purple;*/
+  border-radius: $border-curve;
+  cursor: pointer;
+}
+.delete-trip{
+  color: $red;
+  /*border: $red 1px solid;*/
+  border-radius: $border-curve;
+  padding: 5px 20px 5px 20px;
+  display: inline-block;
+}
+.delete-trip:hover{
+  color:white;
+  background-color: $red;
+}
+
+/*Trip Details Page*/
+#trip-container{
+  position: absolute;
+  width:30%;
+  top: 70px;
+  left:0;
+  text-align: center;
+}
+#trip-title{
+  font-size: 2em;
+  font-weight: 900;
+/*  font-family: roboto;
+*/}
+#location-container{
+  border:1px solid rgba(200,200,200,1);
+  /*border-radius: $border-curve;*/
+  width:76%;
+  margin:10px auto 0 auto;
+  padding:20px;
+  height:400px;
+  overflow: auto;
+  text-align: left;
+}
+.location-name{
+  font-size: 1.3em;
+  margin-bottom: 5px;
+
+}
+.location-description{
+  font-size: .9em;
+  font-family: $rale;
+  margin-bottom: 5px;
+  
+}
+.location-box{
+  margin-bottom: 15px;
+}
+.location-name-field{
+  display: inline-block;
+  margin-left: -.5px;
+  width:85%;
+  padding:10px;
+  font-size: $font-sizef;
+  font-family: $future;
+  border:1px solid rgba(200,200,200,1);
+}
+.location-description-area{
+  display: block;
+  margin-left: -.5px;
+  margin-bottom: 3px;
+  width:85%;
+  max-width: 85;
+  height:150px;
+  padding:10px;
+  font-size: $font-sizef*.9;
+  font-family: $rale;
+  border:1px solid rgba(200,200,200,1);
+}
+.delete-location{
+  color: $red;
+  /*border: $red 1px solid;*/
+  border-radius: $border-curve;
+  padding: 5px 20px 5px 20px;
+  display: inline-block;
+}
+.delete-location:hover{
+  color:white;
+  background-color: $red;
+}
+.save-location-change{
+  padding: 2.5px 20px 2.5px 20px;
+}
+
+/*save button*/
+#save-location{
+  font-family: $rale;
+  color:white;
+  text-align: center;
+  z-index: 1000;
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  top: 17px;
+  right: 300px;
+  background-color: blue;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#save{
+  margin-top: 27px;
+}
+#save-location:hover{
+  background-color: $purple;
+}
+
+/*share*/
+#share-nav-header{
+  font-size: 1.5em;
+  margin-top: -3px;
+  font-family: 'Monoton', cursive;
+  color:white;
+  display: inline-block; 
+}
+#share-nav-header:hover{
+  color:black;
+  cursor:pointer;
+}
+#share-container{
+  position:absolute;
+  left:0;
+  width:30%;
+  margin-top: 80px;
+}
+#share-title{
+  text-align: center;
+  font-size: 2em;
+}
+#share-small-title{
+  text-align: center;
+  font-size: .9em;
+}

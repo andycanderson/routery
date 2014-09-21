@@ -1,5 +1,19 @@
-<h1>show a single trip</h1>
-<h2><%=@trip_name%></h2>
+<div id="share-container">
+   
+    <h2 id="share-small-title"><%=@user_name%>'s Routery</h2>
+    <h1 id="share-title"><%=@trip_name%></h1>
+    <div id="location-container">
+          <% @locations.each do |location|%>
+              <div class="location-box">
+                <h2 class="location-name"><%=location.name%></h2>
+                <h2 class="location-description"><%=location.description%></h2>
+              </div>
+          <%end%>
+
+    </div>
+
+</div>
+
 <div id="map-canvas"></div>
 
 <script>

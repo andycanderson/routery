@@ -24,7 +24,7 @@ Infoapp::Application.routes.draw do
   # new location
   post '/add_dropped' => 'locations#dropped_pins'
 
-  get '/sharelink' => 'share#getlink'
+  # get '/sharelink' => 'share#getlink'
   get '/share/:id' => 'share#show', as: :share
   get '/shareall/:id' => 'share#index', as: :shareall
 end

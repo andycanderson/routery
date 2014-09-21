@@ -59,7 +59,7 @@ var initialize = function(){
     var addresses = <%=@arr%>;
     var names = <%=raw @names.to_json.gsub("</", "<\\/")%>
     var descriptions = <%=raw @descriptions.to_json.gsub("</", "<\\/")%>;
-    
+       
 
     
     var marker = [];
@@ -79,7 +79,6 @@ var initialize = function(){
             maxWidth: 200
         }));
     }
-
     // make clusters for markers
     var markerCluster = new MarkerClusterer(map, marker);
 
@@ -96,15 +95,12 @@ var initialize = function(){
         google.maps.event.addListener(marker[x], 'click', callInfoWindow(x));
     }
 
-
  };
 
  // shows or hides edit forms
  $('.edit-button').click(function(){
      $(this).next(".edit-location").toggle();
  });
-
-
 
  $(document).ready(initialize);
  $(document).on('page:load', initialize);

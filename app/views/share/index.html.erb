@@ -1,4 +1,17 @@
-<h1><%=@user_name%>'s Locations</h1>
+
+<div id="share-container">
+    <h1 id="share-title"><%=@user_name%>'s Routery</h1>
+    <div id="location-container">
+          <% @locations.each do |location|%>
+              <div class="location-box">
+                <h2 class="location-name"><%=location.name%></h2>
+                <h2 class="location-description"><%=location.description%></h2>
+              </div>
+          <%end%>
+
+    </div>
+
+</div>
 <div id="map-canvas"></div>
 
 <script>

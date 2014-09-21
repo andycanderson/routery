@@ -1,8 +1,7 @@
 class ShareController < ApplicationController
 
   def index
-    # target user's id passed
-
+    @share = true
     @user_name = User.find(params[:id]).name
     @locations = Location.where(user_id: params[:id])
     @arr = []
@@ -13,12 +12,15 @@ class ShareController < ApplicationController
       @names<<[location.name]
       @descriptions<<[location.description] 
     end
+    
   end
 
   def show
-    # target trip passed
-    @trip_name = Trip.find(params[:id]).name
+    @share = true
+    trip = Trip.find(params[:id])
+    @trip_name = trip.name
     @locations = Location.where(trip_id: params[:id])
+    @user_name = User.find_by(id: trip.user_id).name
     @arr = []
     @descriptions = []
     @names = []
