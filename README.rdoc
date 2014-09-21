@@ -1,16 +1,9 @@
 =Routery 
 ---
-To Do List:
-* Trip View 
-	1)
-	2)make interface to add description and change name. (Same page or edit page)
+An app that uses google maps and places to save and share locations. 
 
-	
-* Home Page View
-	1)
-	2)fix default zoom on home view
-
-
-* Make a share page - generate share we address, /sharetrip/<trip_id>, pulls all locations with trip :id. Mostly done.
+* Allows you to store sets of locations as trips in a collection called a reserve.
+* Personal notes can be added to each location and viewed in the info popup of the saved pins. 
+* Allows you to share those locations with other people with a shareable link. 
 
 

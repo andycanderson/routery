@@ -16,7 +16,6 @@
             <%@trips.each do |trip|%>
                 <div class="trip-box">
             	<%= link_to "#{trip.name}", trip_path(trip),:class => "trip-name"%>
-                <div class="indicator"><<</div>
                     <div class="push-to-next-row">
                         <div class="edit-button">Edit</div>
                         <div class="edit-location">

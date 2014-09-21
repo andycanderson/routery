@@ -593,16 +593,6 @@ input.submit-trip-change:hover, .edit-button:hover{
   color:rgba(230,50,50,1);
   text-decoration: underline;
 }
-.indicator{
-  display:none;
-  vertical-align: -.1em;
-  font-size: 1.5em;
-  color:rgba(230,50,50,1);
-  font-family: $future;
-}
-.trip-name:hover + .indicator{
-  display:inline-block;
-}
 
 .edit-trip-field{
   display: inline-block;
