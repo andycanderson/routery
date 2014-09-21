@@ -1,24 +1,41 @@
-<h1>show trips</h1>
+<!-- Home Page -->
+<div id="home-container">
+    <div id="home-padding">    
+        <div id="new_trip_form">
+            <%= form_for Trip.new do |f| %>
+            	<%= f.text_field :name, placeholder: "Enter New Trip", id: "new_trip_field"%>
+            	<%= button_tag(type: 'submit', class: "submit", id: "new_trip_submit") do %>
+                 <%=image_tag "train.svg", :class => "submit-icon"%> New Trip
+                <% end %>
+            <% end %>
+        </div>
 
-<%= form_for Trip.new do |f| %>
-	<%= f.text_field :name, placeholder: "Enter New Trip" %>
-	<%= f.submit "New Trip", :class => 'submit' %>
-<% end %>
 
-<%@trips.each do |trip|%>
-	<p>trip name: <%= link_to "#{trip.name}", trip_path(trip)%></p>
-    <div class="edit-button">EDIT</div>
-    <div class="edit-location">
-        <%=form_for trip, html: {method: "patch"} do |f|%>
-        <%=f.text_field :name, value: trip.name%>
-        <%=f.submit "save changes!", :class => 'submit'%>
-        <%= link_to 'delete', trip, :method => :delete %>
-
-        <%end%>
+        <h2 id="home-title">The Reserve</h2>
+        <div class="trips-container">
+            <%@trips.each do |trip|%>
+                <div class="trip-box">
+            	<%= link_to "#{trip.name}", trip_path(trip),:class => "trip-name"%>
+                <div class="indicator"><<</div>
+                    <div class="push-to-next-row">
+                        <div class="edit-button">Edit</div>
+                        <div class="edit-location">
+                            <%=form_for trip, html: {method: "patch"} do |f|%>
+                            <%=f.text_field :name, value: trip.name, class: "edit-trip-field"%>
+                            <%=f.submit "Save", :class => 'submit submit-trip-change'%>
+                            <%= link_to trip, :method => :delete, :class => "delete-trip" do%>
+                            <%=image_tag "nuclear.svg", :class => "delete-icon"%>Delete
+                            <%end%>
+                            <%end%>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="trip-divider"></div> -->
+            <%end%>
+        </div>
+        <%=link_to "Shareable Link", shareall_path(@current_user), :class => "shareable"%>
     </div>
-	
-<%end%>
-
+</div>
 
 <div id="map-canvas"></div>
 

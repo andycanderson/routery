@@ -1,30 +1,36 @@
-<h1>show trip</h1>
-<p>Trip Name: <%=@trip.name%></p>
-<ul>
-    <% @locations.each do |location|%>
-        <li><%=location.name%></li>
-        <li><%=location.description%></li>
-        <div class="edit-button">EDIT</div>
-        <div class="edit-location">
-            <%=form_for location, html: {method: "patch"} do |f|%>
-            <%=f.text_field :name, value: location.name%>
-            <%=f.text_field :description, value: location.description%>
-            <%=f.submit "save changes!", :class => 'submit'%>
-            <%= link_to "go to location", location_path(location)%>
-            <%= link_to "delete", location_delete_path(location), :method => :delete %>
-            <%end%>
-        </div>
-        <br>
-        
-    <%end%>
+<div id="trip-container">
+  <h1 id="trip-title"><%=@trip.name%></h1>
+    
+    <div id="location-container">
+          <% @locations.each do |location|%>
+              <div class="location-box">
+                <h2 class="location-name"><%=location.name%></h2>
+                <h2 class="location-description"><%=location.description%></h2>
+                <div class="edit-button">Edit</div>
+                <div class="edit-location">
+                    <%=form_for location, html: {method: "patch"} do |f|%>
+                      <%=f.text_field :name, value: location.name, placeholder: "Enter Location Name", class: "location-name-field"%>
+                      <%=f.text_area :description, value: location.description, placeholder: "Enter Location Description", class: "location-description-area"%>
+                      <%=f.submit "Save", :class => 'submit submit-trip-change save-location-change'%>
+                      <%= link_to location, :method => :delete, :class => "delete-location" do%>
+                        <%=image_tag "nuclear.svg", :class => "delete-icon", :id => "location-delete"%>Delete
+                      <%end%>
+                    <%end%>
+                </div>
+              </div>
+          <%end%>
 
-</ul>
+    </div>
+    
+    <%= link_to "shareable link", share_path(@trip.id), :class => "shareable"%>
+</div>
+<div id="save-location"><h2 id="save">Save?</h2></div>
 
 
 
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div id="map-canvas"></div>
-    <div id="save-locations">SAVE?</div>
+    
 
     <div id="trip-locations"></div>
 
@@ -65,7 +71,7 @@ var initialize = function(){
           var contentString =  '<div class="info-container"><h1 class="info-header">'+names[x].toString()+'</h1>'+'<p class="info-body">' + descriptions[x].toString() + '</p></div>';
           infowindow.push(new google.maps.InfoWindow({
               content: contentString,
-              maxWidth: 100
+              maxWidth: 200
           }));
     }
 
@@ -173,7 +179,7 @@ var initialize = function(){
     map.setZoom(15);
 
     // show save button
-    $("#save-locations").slideDown();
+    $("#save-location").slideDown();
   });
 
   // Bias the SearchBox results towards places that are within the bounds of the

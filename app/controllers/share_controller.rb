@@ -17,7 +17,7 @@ class ShareController < ApplicationController
 
   def show
     # target trip passed
-    @trip_name = Trip.find(params[:id]).trip_name
+    @trip_name = Trip.find(params[:id]).name
     @locations = Location.where(trip_id: params[:id])
     @arr = []
     @descriptions = []

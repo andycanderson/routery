@@ -7,7 +7,7 @@ To Do List:
 
 	
 * Home Page View
-	1)get locations to cluster.
+	1)
 	2)fix default zoom on home view
 
 
