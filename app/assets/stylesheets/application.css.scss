@@ -237,8 +237,29 @@ a:visted{
   top:150%;
   left:150%;
   z-index: 100;
-  /*box-shadow: 0 0 100px gray;*/
+  -webkit-animation: fadeIn 1s; /* Safari 4+ */
+  -moz-animation:    fadeIn 1s; /* Fx 4+ */
+  -o-animation:      fadeIn 1s; /* Opera 12+ */
+  animation:         fadeIn 1s; /* IE 10+, Fx 29+ */
 }
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; color:black;}
+  100%{ opacity: 1; color:black;}
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; color:black;}
+  100%{ opacity: 1; color:black;}
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; color:black;}
+  100%{ opacity: 1; color:black;}
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; color:black;}
+  100%{ opacity: 1; color:black;}
+}
+
+
 #comment-bubble{
   height:400px;
   width:auto;
